@@ -20,7 +20,7 @@ public class ThreadPoolTest {
         long startTime = System.currentTimeMillis();
 
         final List<Integer> integers = new LinkedList<>();
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 1, 60, TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>(COUNT));
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>(COUNT));
         final Random random = new Random();
 
         for (int i = 0; i < COUNT; i++) {
