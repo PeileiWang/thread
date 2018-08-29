@@ -25,6 +25,7 @@ public class CounterThread extends Thread {
         for (int i = 0; i < NUM; i++) {
             threads[i].join();
         }
+        //实际结果不为1000000
         System.out.println(counter);
     }
 }
